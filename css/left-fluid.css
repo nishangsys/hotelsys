@@ -1,0 +1,543 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: ;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+body { margin: 0 auto;
+font-family:Arial, Helvetica, sans-serif;
+font-size:16px;
+line-height:normal;
+
+ }
+h1 {
+ 
+	background-color:#fcfcfc;
+ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fcfcfc, endColorstr=#cad8de);
+ background-image:-moz-linear-gradient(top, #fcfcfc 57%, #cad8de 100%);
+ background-image:-webkit-linear-gradient(top, #fcfcfc 57%, #cad8de 100%);
+ background-image:-ms-linear-gradient(top, #fcfcfc 57%, #cad8de 100%);
+ background-image:linear-gradient(top, #fcfcfc 57%, #cad8de 100%);
+ background-image:-o-linear-gradient(top, #fcfcfc 57%, #cad8de 100%);
+ background-image:-webkit-gradient(linear, right top, right bottom, color-stop(57%,#fcfcfc), color-stop(100%,#cad8de));
+	text-align:center;
+	color:#1188AA;
+	font-weight:bold;
+	font-size:16px;
+	padding:10px 0px;
+	margin-top:-20px;
+	border-bottom:1px solid#000;
+
+}
+footer, header { position: relative; clear: both; }
+.c1{
+	padding:20px 20px;
+}
+.left-column, .right-column, footer, header {  border: 1px solid  #ccc; padding:; margin: ; }
+
+.nav {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.nav > li,
+.nav > li > a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.inline-items {
+  margin-top: 0;
+}
+
+.inline-items li {
+  margin-left: 0;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.inline-items li:first-child {
+  margin-left: 0;
+  border: none;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.inline-items li:last-child {
+  padding-right: 0;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 47.5em ) {
+
+	.columns-container { 
+		float: left;
+	}
+
+  .left-column { 
+    margin-right: 20em;
+		float: left;
+  }
+
+	.right-column { 
+    width: 18.75em;
+		margin-left: -19.3em;
+		float: left;
+  }   
+}
+
+
+
+
+<!--------------------images---------->
+
+#rig {
+	max-width:960px;
+	margin:0 auto; /*center aligned*/
+	padding:0;
+	font-size:0; /* Remember to change it back to normal font size if have captions */
+	list-style:none;
+	line-height:none;
+	background-color:none;
+}
+#rig li {
+	display:inline-block;
+	*display:inline;/*for IE6 - IE7*/
+	width:25%;
+	vertical-align:middle;
+	box-sizing:border-box;
+	margin:0;
+	line-height:none;
+	padding:0;
+}
+
+/* The wrapper for each item */
+.rig-cell {
+	margin:5px;
+	box-shadow:0 1px 4px rgba(0,0,0,0.4);
+	padding:10px;
+	border:none;
+	color:#555;
+	background-color:white;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	position: relative;
+	overflow:hidden;
+}
+
+.rig-cell h3 {
+	font-size:18px;
+	font-family:'Oswald', sans-serif;
+	font-weight:normal;
+}
+
+/* If have the image layer */
+.rig-img {
+	display:block;
+	border:none;
+	width:100%;
+	height:0;
+    padding-top:83.461538%;
+    background-size:cover;
+	background-color:white;
+	background-image:url(img/1.jpg);
+    background-repeat:no-repeat;
+	position:relative; /* Make its pseudo :after to be relative to it. */
+}
+.rig-img:after{
+	position:absolute;
+	top:20px;right:20px;bottom:20px;left:20px;
+	border:1px solid #fff;
+	content:'+';
+	color:white;
+	padding-top:14%;
+	font-size:30px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	transition:all 0.3s;
+	transform:scale(0);
+}
+
+#rig li:hover .rig-img:after {
+	opacity:1;
+	transform:scale(1);
+}
+
+/* If have the overlay layer */
+.rig-overlay {
+	position: absolute;
+	display:block;
+	top:0;left:0;bottom:0;right:0;
+	margin:auto;
+	background:white;
+	background-size:50px 50px;
+	opacity:0;
+	filter:alpha(opacity=0);/*For older IE*/
+	transition:all 0.3s;
+}
+#rig li:hover .rig-overlay {
+	opacity:0.5;
+}
+
+@media (max-width: 9000px) {
+	#rig li {width:23%;}
+}
+
+@media (max-width: 800px) {
+	#rig li {width:33.33%;}
+}
+
+@media (max-width: 500px) {
+	#rig li {width:50%;}
+}
+
+@media (max-width: 350px) {
+	#rig li {width:100%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div.Dmenu a {
+	text-decoration:none
+}
+div.Dmenu div.mainCat div.allContent div.menuItems {
+	float:left;
+	width:900px;
+	margin:1px 0 1px 1px;
+	color:#000
+}
+div.Dmenu {
+	background: none repeat scroll 0 0 #2AA4CF;
+	border-bottom: 1px solid #DCE5EE;
+	border-top: 1px solid #DCE5EE;
+	font-size: 16px;
+	margin-bottom: 15px;
+	padding-left: 1px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	height:auto;
+	padding:10px 10px;
+	overflow:hidden;
+	
+}
+div.Dmenu div.mainCat {
+	border-left:2px solid transparent;
+	border-right:2px solid transparent;
+	border-top:2px solid transparent;
+	float:left;
+	padding:0px 30px;
+
+	transition: all 0.1s ease 0s;
+}
+div.Dmenu div.mainCat > a:before {
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #A8BACD;
+	content: "";
+	height: 0;
+	position: absolute;
+	right: 6px;
+	top: 17px;
+	width: 0;
+}
+div.Dmenu div.mainCat > a:hover:before {
+	border-top-color: #40668C;
+}
+div.Dmenu div.mainCat a.flink {
+	color: #fff;
+	display: block;
+	font-weight: 700;
+	height: 36px;
+	line-height: 36px;
+	padding-left: 10px;
+	padding-right: 18px;
+	position: relative;
+}
+div.Dmenu div.mainCat div.allContent {
+	background-color:#FFF;
+	border:2px solid #DDF0F9;
+	box-shadow:0 2px 3px rgba(0, 0, 0, 0.3);
+	display:none;
+	max-height:250px;
+	position:absolute;
+	top:36px;
+	left:-2px;
+	width:100%;
+	z-index:-1;
+	border-radius: 0 0 3px 3px;
+}
+div.Dmenu div.mainCat:hover {
+	background:none repeat scroll 0 0 #DDF0F9;
+}
+div.Dmenu div.mainCat:hover a{
+	color:#2AA4CF;
+}
+div.Dmenu div.mainCat:hover div.allContent {
+	display:block;
+}
+div.Dmenu div.mainCat div.allContent a.slink {
+	border-top:1px solid #cddae9;
+	color:#40668c;
+	display:block;
+	font-weight:700;
+	margin:0 0 0 1px;
+	padding:10px
+}
+div.Dmenu div.mainCat div.allContent a.slink:hover {
+	background-color: #DDF0F9;
+	color: #2AA4CF;
+	padding-right: 10px;
+	margin-right: -1px;
+}
+div.Dmenu div.mainCat div.snav:hover div.menuItems {
+	border-left:1px solid #DDF0F9;
+	height:100%;
+	padding-left:10px
+}
+div.Dmenu div.mainCat div.snavM {
+	background:#DDF0F9;
+	float:left;
+	margin-bottom:1px;
+	margin-top:1px;
+	width:150px;
+	height:230px;
+	border-right:1px solid #dde5ef
+}
+div.Dmenu div.mainCat div.menuItems .inside {
+	border-bottom: 1px solid #DCE5EE;
+	padding: 10px 0;
+	margin-left:5px;
+	margin-right:5px;
+	float:left;
+}
+div.Dmenu div.mainCat div.menuItems .inside img {
+	padding-right:10px;
+	width:200px;
+}
+div.Dmenu div.mainCat div.menuItems .inside p {
+	color: #333;
+	font-size: 14px;
+	transition: all 0.2s ease 0s;
+	width:200px;
+}
+div.Dmenu div.mainCat div.menuItems .noCont {
+	padding:5px;
+	font-weight:700;
+	color:#333;
+}
+div.Dmenu a.flink:hover {
+	background-color:#DDF0F9;
+	border:medium none;
+	color:#2AA4CF;
+}
+.clearfix {
+	clear:both;
+	visibility:hidden;
+	height:0;
+	display:block
+}
+#rig p{
+	line-height:normal;
+}
+
+
+
+#chat{
+	width:100%;
+}
+
+div.callout {
+	height: 10px;
+	width: 80%;
+	float: left;
+	line-height:1.3;
+	overflow:hidden;
+	
+}
+
+div.callout {
+	background-color: #444;
+	background-image: -moz-linear-gradient(top, #444, #444);
+	position: relative;
+	color: #ccc;
+	padding: 10px 20px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 20px #999;
+	margin: 5px 0px;
+	min-height: 20px;
+	text-align:left;
+	line-height:1.5;
+	width:90%;
+	font-size:14px;
+	overflow:hidden;
+	border: 1px solid #333;
+	text-shadow: 0 0 1px #000;
+	
+	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;*/
+}
+
+.callout::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+
+.callout.top::before {
+	left: 45%;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}
+
+.callout.bottom::before {
+	left: 45%;
+	top: -20px;
+	border-bottom: 10px solid #444;
+}
+
+.callout.left::before {
+	right: -20px;
+	top: 40%;
+	border-left: 10px solid #444;
+}
+
+.callout.right::before {
+	left: -20px;
+	top: 40%;
+	border-right: 10px solid #444;
+	font-size:14px;
+}
+
+.callout.top-left::before {
+	left: 7px;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}
+
+.callout.top-right::before {
+	right: 7px;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}
+.callout right a{
+	color:#000;
+}
+img{
+	width:40px;
+	height:40px;
+	align:left;
+}
